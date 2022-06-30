@@ -1,6 +1,2 @@
 #!/bin/bash
-cut -d : -f 1,6 /etc/passwd | sort
-23 - find -empty | rev | cut -d'/' -f1 | rev
-24 find -type f -name "*.gif" -printf "%f\n" | rev | cut -d'.' -f 2- | rev | LC_ALL=C sort -f
-25 - cut -c1 | paste -s | tr -d "[:blank:]"
-26 - tail -n +2 | cut -f1 | sort | uniq -c | sort -nr | head -11 | tr -s ' ' | cut -d' ' -f3
+sort /etc/passwd | cut -d ':" -f 1,6
